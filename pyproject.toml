@@ -1,0 +1,23 @@
+[project]
+name = "dist-along-route"
+version = "0.1.0"
+description = "dist-along-route determines the distance of a point along a defined route, with both specified in GPS coords"
+authors = [
+    {name = "ThisTemba", email = "tembamateke@gmail.com"},
+]
+dependencies = ["numpy>=2.3.2", "scipy>=1.16.1", "coordstometers>=0.0.4"]
+requires-python = ">=3.12"
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.4.1",
+]
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
